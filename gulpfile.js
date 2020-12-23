@@ -27,7 +27,8 @@ global.$ = {
             svg: '#src/images/svg/**/*.svg',
             fonts: '#src/fonts/',
             library: {
-                jquery: '#src/js/jquery.js'
+                jquery: '#src/js/jquery.js',
+                carousel: '#src/js/owl.carousel.min.js'
             }
         },
         output: {

@@ -2,6 +2,7 @@
 
 const jsFiles = [
     $.config.paths.library.jquery,
+    $.config.paths.library.carousel,
     $.config.paths.js,
 ];
 

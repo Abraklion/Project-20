@@ -1,12 +1,25 @@
 .slider
   .slider__carousel.owl-carousel.owl-theme
-    .slider__element
+    .slider__element(data-hash="one")
       .slider__wrapper.wrapper
         p.slider__subtitle Creative Template
         h1.slider__title Welcome#[<br>]to MoGo
-        a(href="#").slider__link Learn more
+        a(href="#").slider__button Learn more
+    .slider__element.slider__element--bg_blue(data-hash="two")
+      .slider__wrapper.wrapper
+        p.slider__subtitle Creative Template
+        h1.slider__title Work
+    .slider__element.slider__element--bg_green(data-hash="three")
+      .slider__wrapper.wrapper
+        p.slider__subtitle Creative Template
+        h1.slider__title About
+    .slider__element.slider__element--bg_pink(data-hash="four")
+      .slider__wrapper.wrapper
+        p.slider__subtitle Creative Template
+        h1.slider__title Contacts
   .slider__nav
-    a(href="#").slider__link #[span 01] Intro
-    a(href="#").slider__link #[span 02] Work
-    a(href="#").slider__link #[span 03] About
-    a(href="#").slider__link #[span 04] Contacts
+    .slider__wrapper-nav.wrapper
+      a(href="#one").slider__link.slider__link--active #[span 01] Intro
+      a(href="#two").slider__link #[span 02] Work
+      a(href="#three").slider__link #[span 03] About
+      a(href="#four").slider__link #[span 04] Contacts
