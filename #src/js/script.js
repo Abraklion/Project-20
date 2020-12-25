@@ -27,4 +27,37 @@ $(document).ready(function () {
         }
     });
 
+    // Слайдер компании
+    $('.company__wrapper').owlCarousel({
+        loop:true,
+        margin:60,
+        nav:false,
+        dots: false,
+        navText: [],
+        responsive:{
+            0:{
+                items:2,
+                margin:0,
+                dots: true
+            },
+            480:{
+                items:3,
+                margin:10,
+                dots: true
+            },
+            600:{
+                items:4,
+                margin:20,
+                dots: true
+            },
+            768:{
+                items:5,
+                dots: true
+            },
+            1024:{
+                items:6
+            }
+        }
+    })
+
 });
