@@ -86,6 +86,43 @@
   }
 
   &__social{
+    background-color: @primaryYellow;
+    box-sizing: border-box;
+    width: 54px;
+    height: 54px;
+    display: flex;
+    border-right: 1px solid #f9bd87;
+    transition: 0.4s background-color;
+
+    &:last-child{
+      border-right: none;
+    }
+
+    &:hover{
+      background-color: @primaryRed;
+
+      .element__svg{
+        fill: @white;
+      }
+    }
+  }
+
+  // Модификатор
+  &--team{
+
+    .element__img{
+      height: 470px;
+    }
+
+    .element__info{
+      flex-direction: row;
+    }
+
+    .element__svg{
+      margin: auto;
+      fill: @primaryRed;
+      transition: 0.4s fill;
+    }
 
   }
 }
