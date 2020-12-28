@@ -60,4 +60,14 @@ $(document).ready(function () {
         }
     })
 
+    // Слайдер отзывы клиентов
+    $('.reviews__carousel').owlCarousel({
+        loop:true,
+        margin:0,
+        nav:true,
+        dots: false,
+        navText: [],
+        items:1
+    })
+
 });
