@@ -3,6 +3,10 @@
   background: url("../img/design-img-bg.jpg") center center/cover no-repeat;
   position: relative;
 
+  @supports (-webkit-appearance:none){
+    background: url("../img/design-img-bg.webp") center center/cover no-repeat;
+  }
+
   &:before{
     content: '';
     position: absolute;
