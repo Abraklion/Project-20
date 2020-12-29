@@ -80,9 +80,15 @@
     margin: 8px 0 0 0;
   }
 
-
   &__subtitle{
+    .fun-px-to-rem(15px);
 
+    font-style: italic;
+    font-weight: 300;
+    font-size: @rem;
+    color: @white;
+    text-align: center;
+    margin: 0;
   }
 
   &__social{
@@ -122,6 +128,33 @@
       margin: auto;
       fill: @primaryRed;
       transition: 0.4s fill;
+    }
+
+  }
+
+  // Модификатор
+  &--work{
+
+    &:hover{
+      box-shadow: none;
+      transform: translate(0,0);
+    }
+
+    .element__img{
+      height: 100%;
+    }
+
+    .element__svg{
+      width: 30px;
+      height: 30px;
+    }
+
+    .element__title{
+      .fun-px-to-rem(14px);
+
+      font-weight: 400;
+      font-size: @rem;
+      margin: 20px 0 15px 0;
     }
 
   }
