@@ -5,7 +5,7 @@
 - const footerBlog = [{'subtitle': 'Lorem ipsum dolor sit amet, consectetur adipiscing','date': 'Jan 9, 2016','img': 'blog-min-img1'},{'subtitle': 'Consectetur adipiscing elit, sed do eiusmod tempor','date': 'Jan 9, 2016','img': 'blog-min-img2'},{'subtitle': 'sed do eiusmod tempor incididunt ut labore','date': 'Jan 9, 2016','img': 'blog-min-img3'}]
 
 //- инстаграм
-- const footerInstagram = [{'img': 'instagram-img1'},{'img': 'instagram-img2'},{'img': 'instagram-img3'},{'img': 'instagram-img4'},{'img': 'instagram-img5'},{'img': 'instagram-img7'},{'img': 'instagram-img8'},{'img': 'instagram-img9'}]
+- const footerInstagram = [{'img': 'instagram-img1'},{'img': 'instagram-img2'},{'img': 'instagram-img3'},{'img': 'instagram-img4'},{'img': 'instagram-img5'},{'img': 'instagram-img6'},{'img': 'instagram-img7'},{'img': 'instagram-img8'},{'img': 'instagram-img9'}]
 
 footer.footer
   .footer__wrapper.wrapper
@@ -15,7 +15,6 @@ footer.footer
         .footer__description-text.
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
           Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
       .footer__description-social
         .footer__description-number #[span 15k] followers
         .footer__description-follow
@@ -28,7 +27,7 @@ footer.footer
                   use(xlink:href="img/symbol/sprite.svg#" + val.svg)
 
         form(method="GET" action="index.html").footer__description-subscribe
-          input(type="text" name="search" placeholder="Your Email...")
+          input(type="email" name="search" autocomplete="off" placeholder="Your Email...")
           button Subscribe
     .footer__blog
       .footer__blog-title blogs
@@ -42,7 +41,8 @@ footer.footer
                 source(srcset="img/" + val.img + ".webp" type="image/webp")
                 img(src="img/" + val.img + ".jpg" alt="Картинка")
             .footer__blog-content
-              .footer__blog-subtitle= val.subtitle
+              .footer__blog-subtitle
+                a(href="#")= val.subtitle
               .footer__blog-date= val.date
 
     .footer__instagram
