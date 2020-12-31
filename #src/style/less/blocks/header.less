@@ -47,6 +47,7 @@
     text-decoration: none;
     cursor: pointer;
     user-select: none;
+    outline: none;
 
     &:first-child{
       margin: 0 35px 0 0;
@@ -56,7 +57,7 @@
       }
     }
 
-    &:hover{
+    &:hover,&:focus{
 
       .header__icons-svg{
         fill: @iconHoverColor;

@@ -29,6 +29,19 @@
     display: block;
     position: relative;
     text-decoration: none;
+
+    &:focus{
+      outline: 1px solid @primaryBlue;
+    }
+
+    picture{
+      display: block;
+    }
+
+    source{
+      display: block;
+      height: 0;
+    }
   }
 
   &__img{
@@ -90,6 +103,12 @@
     a{
       color: @black;
       text-decoration: none;
+
+      &:focus{
+        outline: none;
+        border-bottom: 1px solid @primaryBlue;
+      }
+
     }
   }
 

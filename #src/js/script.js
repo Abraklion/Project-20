@@ -70,4 +70,22 @@ $(document).ready(function () {
         items:1
     })
 
+    // Фокус меню
+    $('.menu__item a').on('focus', function (e) {
+        $(this).parents('.menu__item').addClass('menu__item--active');
+    });
+
+    $('.menu__item a').on('blur', function (e) {
+        $(this).parents('.menu__item').removeClass('menu__item--active');
+    });
+
+    // Фокус команда
+    $('.element a').on('focus', function (e) {
+        $(this).parents('.element').addClass('element--focus');
+    });
+
+    $('.element a').on('blur', function (e) {
+        $(this).parents('.element').removeClass('element--focus');
+    });
+
 });

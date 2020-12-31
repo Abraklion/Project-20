@@ -11,7 +11,7 @@ global.$ = {
             style: 'less', // scss / sass / less / styl
             fullCss: true, // true / false
             fullJs: true, // true / false
-            resizeImg: false, // true / false
+            resizeImg: true, // true / false
         },
         paths: {
             html: '#src/html/*.html',

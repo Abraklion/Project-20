@@ -8,9 +8,10 @@
   transform: translate(0,0);
   transition: 0.5s box-shadow, 0.5s transform;
 
-  &:hover{
+  &:hover,&:focus{
     box-shadow: 10px 10px 0 0 @primaryBlue;
     transform: translate(-10px,-10px);
+    outline: none;
 
     &::before{
       opacity: 1;
@@ -99,12 +100,13 @@
     display: flex;
     border-right: 1px solid #f9bd87;
     transition: 0.4s background-color;
+    outline: none;
 
     &:last-child{
       border-right: none;
     }
 
-    &:hover{
+    &:hover,&:focus{
       background-color: @primaryRed;
 
       .element__svg{
@@ -135,7 +137,7 @@
   // Модификатор
   &--work{
 
-    &:hover{
+    &:hover,&:focus{
       box-shadow: none;
       transform: translate(0,0);
     }
@@ -157,5 +159,19 @@
       margin: 20px 0 15px 0;
     }
 
+  }
+
+  &--focus{
+    box-shadow: 10px 10px 0 0 @primaryBlue;
+    transform: translate(-10px,-10px);
+    outline: none;
+
+    &::before{
+      opacity: 1;
+    }
+
+    .element__info{
+      opacity: 1;
+    }
   }
 }
