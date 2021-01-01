@@ -107,6 +107,10 @@
   &__description-subscribe{
     display: flex;
 
+    label{
+      &:extend(.visually-hidden);
+    }
+
     input{
       display: block;
       background-color: @white;
@@ -297,8 +301,9 @@
     font-size: @rem;
     color: @black;
     text-decoration: none;
+    outline: none;
 
-    &:hover{
+    &:hover,&:focus{
       text-decoration: underline;
     }
   }

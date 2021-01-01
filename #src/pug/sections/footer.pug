@@ -27,7 +27,8 @@ footer.footer
                   use(xlink:href="img/symbol/sprite.svg#" + val.svg)
 
         form(method="GET" action="index.html").footer__description-subscribe
-          input(type="email" name="search" autocomplete="off" placeholder="Your Email...")
+          label(for="email") Email
+          input( id="email" type="email" name="search" autocomplete="off" placeholder="Your Email...")
           button Subscribe
     .footer__blog
       .footer__blog-title blogs
