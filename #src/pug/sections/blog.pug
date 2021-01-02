@@ -18,7 +18,7 @@ section.blog
           a(href="#").blog__header
             picture
               source(srcset="img/" + val.img + ".webp" type="image/webp")
-              img(src="img/" + val.img + ".jpg" alt="Картинка").blog__img
+              img(src="img/" + val.img + ".jpg" alt="Картинка" loading="lazy").blog__img
             .blog__date
               span.blog__date-first= val.number
               span.blog__date-last= val.month

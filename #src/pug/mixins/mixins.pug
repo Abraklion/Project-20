@@ -48,7 +48,7 @@ mixin element(array,blockTitle,classElement='',classModifier='')
           .element__img
             picture
               source(srcset="img/" + val.img + ".webp" type="image/webp")
-              img(src="img/" + val.img + ".jpg" alt="Картинка")
+              img(src="img/" + val.img + ".jpg" alt="Картинка" loading="lazy")
           .element__info
             svg.element__svg
               use(xlink:href="img/symbol/sprite.svg#users")
@@ -60,7 +60,7 @@ mixin element(array,blockTitle,classElement='',classModifier='')
             .element__img
               picture
                 source(srcset="img/" + val.img + ".webp" type="image/webp")
-                img(src="img/" + val.img + ".jpg" alt="Картинка")
+                img(src="img/" + val.img + ".jpg" alt="Картинка" loading="lazy")
             .element__info
               a(href="#" aria-label="facebook").element__social
                 svg.element__svg
@@ -82,7 +82,7 @@ mixin element(array,blockTitle,classElement='',classModifier='')
           .element__img
             picture
               source(srcset="img/" + val.img + ".webp" type="image/webp")
-              img(src="img/" + val.img + ".jpg" alt="Картинка")
+              img(src="img/" + val.img + ".jpg" alt="Картинка" loading="lazy")
           .element__info
             svg.element__svg
               use(xlink:href="img/symbol/sprite.svg#picture")

@@ -40,7 +40,7 @@ footer.footer
             .footer__blog-img
               picture
                 source(srcset="img/" + val.img + ".webp" type="image/webp")
-                img(src="img/" + val.img + ".jpg" alt="Картинка")
+                img(src="img/" + val.img + ".jpg" alt="Картинка" loading="lazy")
             .footer__blog-content
               .footer__blog-subtitle
                 a(href="#")= val.subtitle
@@ -55,7 +55,7 @@ footer.footer
           a(href="#").footer__instagram-link
             picture
               source(srcset="img/" + val.img + ".webp" type="image/webp")
-              img(src="img/" + val.img + ".jpg" alt="Картинка")
+              img(src="img/" + val.img + ".jpg" alt="Картинка" loading="lazy")
 
       a(href="#").footer__instagram-view View more photos
     .footer__copyright &copy; 2016 MoGo free PSD template by #[span Laaqiq]
