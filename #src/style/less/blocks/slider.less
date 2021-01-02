@@ -9,6 +9,7 @@
   min-height: 100vh;
   position: relative;
   user-select: none;
+  background-color: @bgColorSlider2;
 
   &__carousel{
     min-height: inherit;
@@ -240,6 +241,14 @@
 
   .slider{
 
+    &__element{
+      background: url("../img/first-page-img-980.jpg") center center/cover no-repeat;
+
+      @supports (-webkit-appearance:none){
+        background: url("../img/first-page-img-980.webp") center center/cover no-repeat;
+      }
+    }
+
     &__subtitle{
       .fun-px-to-rem(36px);
 
@@ -270,6 +279,14 @@
 @media (max-width: 768px) {
 
   .slider{
+
+    &__element{
+      background: url("../img/first-page-img-768.jpg") center center/cover no-repeat;
+
+      @supports (-webkit-appearance:none){
+        background: url("../img/first-page-img-768.webp") center center/cover no-repeat;
+      }
+    }
 
     &__subtitle{
       margin-bottom: 25px;
@@ -302,6 +319,14 @@
 @media (max-width: 480px) {
 
   .slider{
+
+    &__element{
+      background: url("../img/first-page-img-480.jpg") center center/cover no-repeat;
+
+      @supports (-webkit-appearance:none){
+        background: url("../img/first-page-img-480.webp") center center/cover no-repeat;
+      }
+    }
 
     &__subtitle{
       .fun-px-to-rem(24px);

@@ -5,7 +5,7 @@ module.exports = function () {
         return $.gulp.src($.config.paths.webp + '**/*.{jpg,png}')
             .pipe($.gp.if($.config.bulkhead.resizeImg,$.gp.tinypngCompress({
                 key: 'yPnptfy8hjVP6f0Y0vC7mbdwT4hPZfJs',
-                parallel: true, // асинхронная загрузка всех картинок (по умолчанию: true)
+                parallel: false, // асинхронная загрузка всех картинок (по умолчанию: true)
                 parallelMax: 2 // сколько за раз отправлять картинок на сервер (по умолчанию: 5)
             })))
             .pipe($.gulp.dest($.config.output.pathImg))

@@ -103,6 +103,12 @@
 @media (max-width: 980px) {
 
   .people-say{
+    background: url("../img/client-bg-980.jpg") center center/cover no-repeat;
+    position: relative;
+
+    @supports (-webkit-appearance:none){
+      background: url("../img/client-bg-980.webp") center center/cover no-repeat;
+    }
 
     &__wrapper{
       padding-top: 50px;
@@ -124,6 +130,12 @@
 @media (max-width: 768px) {
 
   .people-say{
+    background: url("../img/client-bg-768.jpg") center center/cover no-repeat;
+    position: relative;
+
+    @supports (-webkit-appearance:none){
+      background: url("../img/client-bg-768.webp") center center/cover no-repeat;
+    }
 
     &__block{
       justify-content: space-between;
@@ -145,6 +157,19 @@
       flex: 0 0 100%;
     }
 
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .people-say{
+    background: url("../img/client-bg-480.jpg") center center/cover no-repeat;
+    position: relative;
+
+    @supports (-webkit-appearance:none){
+      background: url("../img/client-bg-480.webp") center center/cover no-repeat;
+    }
   }
 
 }
